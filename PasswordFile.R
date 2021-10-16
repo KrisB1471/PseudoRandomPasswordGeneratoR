@@ -6,10 +6,10 @@ setwd("C:/Users/krisb/Desktop/Stuff/Password")
 #set.seed(1471) 
 passWord <- function(LENGHT) {
   symbolsA <- c("+", "*", "%", "&", "/", "(", ")", "=", 
-                "@", "#", "?", "'", "^", "!", "$", "?", 
+                "@", "#", "?", "'", "^", "!", "$", "£", 
                 "-", "_", ".", ":", ",", ";", "<", ">")
-  symbolsB <- c("?", "?", "?", "?", "|", "?", "?", "`", 
-                "~", "?", "[", "]", "{", "}") #less common symbols -> but could be a list of anything
+  symbolsB <- c("°", "§",  "¦","¬", "¢", "|", "¨", "`", 
+                "~", "´", "[", "]", "{", "}") #less common symbols -> but could be a list of anything
   numbers10 <- c(0:9)
   pwChars <- c(letters, LETTERS, symbolsA, symbolsB, numbers10)
   #setting probabilities for each element of pwChars
